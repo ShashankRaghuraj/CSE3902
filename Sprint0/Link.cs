@@ -6,31 +6,32 @@ using System.Threading.Tasks;
 
 namespace Sprint0
 {
+    // TODO: Do methods inside need to be public?
     public class Link : ILink
     {
         ILinkState state;
 
-        void ChangeDirection()
+        public void ChangeDirection()
         {
             state.changeDirection();
         }
 
-        void TakeDamage()
+        public void TakeDamage()
         {
             state.takeDamage();
         }
 
-        void UseItem()
+        public void UseItem()
         {
             state.useItem();
         }
 
-        void AttackSword()
+        public void AttackSword()
         {
             state.attackSword();
         }
 
-        void Update()
+        public void Update()
         {
             state.Update();
         }
