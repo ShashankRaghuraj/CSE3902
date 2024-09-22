@@ -14,7 +14,7 @@ namespace Sprint0 {
         private Texture2D characterTexture;
         private SpriteFont font;
         private int spriteMode;
-
+        //Hi this works?
         private int[] spritePos;
         private bool moving;
 
