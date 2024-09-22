@@ -4,8 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/shiva/CSE3902/Sprint0/Content/File.spritefont</File>
-    <File>C:/Users/shiva/CSE3902/Sprint0/Content/mario.png</File>
+    <File>C:/Users/willc/Source/Repos/CSE3902/Sprint0/Content/File.spritefont</File>
+    <File>C:/Users/willc/Source/Repos/CSE3902/Sprint0/Content/mario.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />
