@@ -360,7 +360,7 @@ MigrationBackup/
 .ionide/
 
 # Fody - auto-generated XML schema
-/Sprint0/bin/
+Sprint0/bin/
 FodyWeavers.xsd
 *.cache
 *.editorconfig
