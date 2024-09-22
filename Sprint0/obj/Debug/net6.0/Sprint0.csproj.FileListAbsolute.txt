@@ -55,3 +55,12 @@ C:\Users\willc\Source\Repos\CSE3902\Sprint0\obj\Debug\net6.0\refint\Sprint0.dll
 C:\Users\willc\Source\Repos\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.pdb
 C:\Users\willc\Source\Repos\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.genruntimeconfig.cache
 C:\Users\willc\Source\Repos\CSE3902\Sprint0\obj\Debug\net6.0\ref\Sprint0.dll
+C:\Users\Shashank Raghuraj\cse@OSU\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.csproj.AssemblyReference.cache
+C:\Users\Shashank Raghuraj\cse@OSU\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Shashank Raghuraj\cse@OSU\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.AssemblyInfoInputs.cache
+C:\Users\Shashank Raghuraj\cse@OSU\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.AssemblyInfo.cs
+C:\Users\Shashank Raghuraj\cse@OSU\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.csproj.CoreCompileInputs.cache
+C:\Users\Shashank Raghuraj\cse@OSU\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.sourcelink.json
+C:\Users\Shashank Raghuraj\cse@OSU\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.dll
+C:\Users\Shashank Raghuraj\cse@OSU\CSE3902\Sprint0\obj\Debug\net6.0\refint\Sprint0.dll
+C:\Users\Shashank Raghuraj\cse@OSU\CSE3902\Sprint0\obj\Debug\net6.0\Sprint0.pdb

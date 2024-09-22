@@ -102,23 +102,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\willc\\.nuget\\packages\\": {},
+    "C:\\Users\\Shashank Raghuraj\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\willc\\Source\\Repos\\CSE3902\\Sprint0\\Sprint0.csproj",
+      "projectUniqueName": "C:\\Users\\Shashank Raghuraj\\cse@OSU\\CSE3902\\Sprint0\\Sprint0.csproj",
       "projectName": "Sprint0",
-      "projectPath": "C:\\Users\\willc\\Source\\Repos\\CSE3902\\Sprint0\\Sprint0.csproj",
-      "packagesPath": "C:\\Users\\willc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\willc\\Source\\Repos\\CSE3902\\Sprint0\\obj\\",
+      "projectPath": "C:\\Users\\Shashank Raghuraj\\cse@OSU\\CSE3902\\Sprint0\\Sprint0.csproj",
+      "packagesPath": "C:\\Users\\Shashank Raghuraj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Shashank Raghuraj\\cse@OSU\\CSE3902\\Sprint0\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\willc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Shashank Raghuraj\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -176,7 +176,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
