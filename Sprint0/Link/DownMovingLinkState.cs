@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Sprint0
 {
-    public class DownNonMovingLinkState : ILinkState
+    public class DownMovingLinkState
     {
         private Link link;
 
-        public DownNonMovingLinkState(Link link)
+        public DownMovingLinkState(Link link)
         {
             this.link = link;
         }
@@ -32,7 +32,12 @@ namespace Sprint0
 
         public void GoDirectionDown()
         {
-            this.link = new DownMovingLinkState(link);
+
+        }
+
+        public void Update()
+        {
+            link.MoveDown();
         }
     }
 }

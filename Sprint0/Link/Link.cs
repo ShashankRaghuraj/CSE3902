@@ -23,10 +23,10 @@ namespace Sprint0
             
         }
 
-        public void ChangeDirection()
-        {
-            state.changeDirection();
-        }
+        //public void ChangeDirection()
+        //{
+        //    state.ChangeDirection();
+        //}
 
         public void TakeDamage()
         {
@@ -49,6 +49,24 @@ namespace Sprint0
         }
 
         public void MoveLeft()
+        {
+            if (x > 0)
+            {
+                x = x - 1;
+            }
+        }
+
+        public void MoveRight()
+        {
+
+        }
+
+        public void MoveUp()
+        {
+
+        }
+
+        public void MoveDown()
         {
 
         }

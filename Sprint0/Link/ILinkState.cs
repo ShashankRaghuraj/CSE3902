@@ -9,10 +9,10 @@ namespace Sprint0
 {
     public interface ILinkState
     {
-        void ChangeDirectionLeft();
-        void ChangeDirectionRight();
-        void ChangeDirectionUp();
-        void ChangeDirectionDown();
+        void GoDirectionLeft();
+        void GoDirectionRight();
+        void GoDirectionUp();
+        void GoDirectionDown();
 
         void AttackSword();
 
