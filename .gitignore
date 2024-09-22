@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+*.cache
+*.editorconfig
+*.json
+*.props
+Sprint0/obj/Debug/net6.0/Sprint0.AssemblyInfo.cs
