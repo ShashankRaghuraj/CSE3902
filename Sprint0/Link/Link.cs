@@ -1,74 +1,74 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Microsoft.Xna.Framework.Input;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Runtime.CompilerServices;
+//using System.Text;
+//using System.Threading.Tasks;
+//using Microsoft.Xna.Framework;
+//using Microsoft.Xna.Framework.Graphics;
+//using Microsoft.Xna.Framework.Input;
 
-namespace Sprint0
-{
-    // TODO: Do methods inside need to be public?
-    public class Link : ILink
-    {
-        ILinkState state;
-        private Viewport viewport;
-        int x;
-        int y;
+//namespace Sprint0
+//{
+//    // TODO: Do methods inside need to be public?
+//    public class Link : ILink
+//    {
+//        ILinkState state;
+//        private Viewport viewport;
+//        int x;
+//        int y;
 
-        public Link()
-        {
-            
-        }
+//        public Link()
+//        {
 
-        //public void ChangeDirection()
-        //{
-        //    state.ChangeDirection();
-        //}
+//        }
 
-        public void TakeDamage()
-        {
-            state.takeDamage();
-        }
+//        //public void ChangeDirection()
+//        //{
+//        //    state.ChangeDirection();
+//        //}
 
-        public void UseItem()
-        {
-            state.useItem();
-        }
+//        public void TakeDamage()
+//        {
+//            state.takeDamage();
+//        }
 
-        public void AttackSword()
-        {
-            state.attackSword();
-        }
+//        public void UseItem()
+//        {
+//            state.useItem();
+//        }
 
-        public void Update()
-        {
-            state.Update();
-        }
+//        public void AttackSword()
+//        {
+//            state.attackSword();
+//        }
 
-        public void MoveLeft()
-        {
-            if (x > 0)
-            {
-                x = x - 1;
-            }
-        }
+//        public void Update()
+//        {
+//            state.Update();
+//        }
 
-        public void MoveRight()
-        {
+//        public void MoveLeft()
+//        {
+//            if (x > 0)
+//            {
+//                x = x - 1;
+//            }
+//        }
 
-        }
+//        public void MoveRight()
+//        {
 
-        public void MoveUp()
-        {
+//        }
 
-        }
+//        public void MoveUp()
+//        {
 
-        public void MoveDown()
-        {
+//        }
 
-        }
-    }
-}
+//        public void MoveDown()
+//        {
+
+//        }
+//    }
+//}

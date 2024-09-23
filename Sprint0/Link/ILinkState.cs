@@ -1,25 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Security.Cryptography;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace Sprint0
-{
-    public interface ILinkState
-    {
-        void GoDirectionLeft();
-        void GoDirectionRight();
-        void GoDirectionUp();
-        void GoDirectionDown();
+//namespace Sprint0
+//{
+//    public interface ILinkState
+//    {
+//        void GoDirectionLeft();
+//        void GoDirectionRight();
+//        void GoDirectionUp();
+//        void GoDirectionDown();
 
-        void AttackSword();
+//        void AttackSword();
 
-        void TakeDamage();
+//        void TakeDamage();
 
-        void UseItem();
+//        void UseItem();
 
-        void Update();
-    }
-}
+//        void Update();
+//    }
+//}

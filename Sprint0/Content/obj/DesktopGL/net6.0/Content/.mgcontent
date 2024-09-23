@@ -8,9 +8,11 @@
     <File>C:/Users/elipa/Source/Repos/CSE3902/Sprint0/Content/File.spritefont</File>
     <File>C:/Users/elipa/Source/Repos/CSE3902/Sprint0/Content/Link.png</File>
     <File>C:/Users/elipa/Source/Repos/CSE3902/Sprint0/Content/mario.png</File>
+    <File>C:/Users/elipa/Source/Repos/CSE3902/Sprint0/Content/zelda_blocks.png</File>
   </SourceFiles>
   <DestFiles>
     <File>Link.png</File>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

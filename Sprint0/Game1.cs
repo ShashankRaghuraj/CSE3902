@@ -4,8 +4,10 @@ using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 
-namespace Sprint0 {
-    public class Game1 : Game {
+namespace Sprint0
+{
+    public class Game1 : Game
+    {
         private GraphicsDeviceManager graphics;
         private SpriteBatch spriteBatch;
         private ISprite characterSprite;
@@ -14,13 +16,17 @@ namespace Sprint0 {
         private Texture2D characterTexture;
         private SpriteFont font;
         private int spriteMode;
-        //Hi this works?
         private int[] spritePos;
         private bool moving;
 
+        private Texture2D blockTexture; // Single block texture
+        private List<Rectangle> blockSourceRectangles; // List of source rectangles for blocks
+        private StationaryBlock currentBlock; // Current block
+
         enum PlayerSpriteList { NonMovingNonAnimatedPlayer, NonMovingAnimatedPlayer, MovingNonAnimatedPlayer, MovingAnimatedPlayer };
 
-        public Game1(){
+        public Game1()
+        {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
@@ -32,32 +38,52 @@ namespace Sprint0 {
             spritePos[1] = 50;
             spriteMode = 1;
             moving = false;
+
+            blockSourceRectangles = new List<Rectangle>(); // Initialize block source rectangles list
         }
 
-        protected override void Initialize(){
+        protected override void Initialize()
+        {
             base.Initialize();
         }
 
-        protected override void LoadContent(){
+        protected override void LoadContent()
+        {
             spriteBatch = new SpriteBatch(GraphicsDevice);
             characterSprite = new NonMovingNonAnimatedSprite(spritePos[0], spritePos[1]);
-            characterTexture = Content.Load<Texture2D>("Link");
+            characterTexture = Content.Load<Texture2D>("mario");
             font = Content.Load<SpriteFont>("File");
             textSprite = new TextSprite(200, 100, font);
+
+            // Load block texture
+            blockTexture = Content.Load<Texture2D>("zelda_blocks");
+
+            // Define source rectangles for blocks
+            blockSourceRectangles.Add(new Rectangle(0, 300, 32, 32)); // Block 1
+            blockSourceRectangles.Add(new Rectangle(64, 100, 32, 32)); // Block 2
+
+            // Initialize the current block with the first source rectangle
+            currentBlock = new StationaryBlock(100, 100, blockTexture, blockSourceRectangles[0]);
         }
 
-        protected override void Update(GameTime gameTime){
-            if (Keyboard.GetState().IsKeyDown(Keys.Escape) || Keyboard.GetState().IsKeyDown(Keys.D0)) {
+        protected override void Update(GameTime gameTime)
+        {
+            if (Keyboard.GetState().IsKeyDown(Keys.Escape) || Keyboard.GetState().IsKeyDown(Keys.D0))
+            {
                 Exit();
             }
 
-            foreach(IController c in controllerList) {
+            foreach (IController c in controllerList)
+            {
                 c.Update();
             }
 
-            if (moving && spritePos[1] < GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2.2) {
+            if (moving && spritePos[1] < GraphicsAdapter.DefaultAdapter.CurrentDisplayMode.Height / 2.2)
+            {
                 spritePos[1]++;
-            } else if (moving) {
+            }
+            else if (moving)
+            {
                 spritePos[1] = -5;
             }
 
@@ -66,21 +92,28 @@ namespace Sprint0 {
             base.Update(gameTime);
         }
 
-        protected override void Draw(GameTime gameTime){
+        protected override void Draw(GameTime gameTime)
+        {
             spriteBatch.Begin();
             GraphicsDevice.Clear(Color.Cyan);
 
             characterSprite.Draw(spriteBatch, characterTexture);
             textSprite.Draw(spriteBatch, characterTexture);
 
+            // Draw the current block
+            currentBlock.Draw(spriteBatch, blockTexture);
+
             base.Draw(gameTime);
             spriteBatch.End();
         }
 
-        public void setMode(int mode) {
-            if(spriteMode != mode) {
+        public void setMode(int mode)
+        {
+            if (spriteMode != mode)
+            {
                 spriteMode = mode;
-                switch (mode) {
+                switch (mode)
+                {
                     case 1:
                         characterSprite = new NonMovingNonAnimatedSprite(spritePos[0], spritePos[1]);
                         moving = false;
@@ -98,7 +131,27 @@ namespace Sprint0 {
                         moving = true;
                         break;
                 }
-            }            
+            }
+        }
+
+        public void PreviousBlock()
+        {
+            if (blockSourceRectangles.Count > 0)
+            {
+                int currentIndex = blockSourceRectangles.IndexOf(currentBlock.SourceRectangle);
+                int previousIndex = (currentIndex - 1 + blockSourceRectangles.Count) % blockSourceRectangles.Count;
+                currentBlock.SourceRectangle = blockSourceRectangles[previousIndex];
+            }
+        }
+
+        public void NextBlock()
+        {
+            if (blockSourceRectangles.Count > 0)
+            {
+                int currentIndex = blockSourceRectangles.IndexOf(currentBlock.SourceRectangle);
+                int nextIndex = (currentIndex + 1) % blockSourceRectangles.Count;
+                currentBlock.SourceRectangle = blockSourceRectangles[nextIndex];
+            }
         }
     }
 }
