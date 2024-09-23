@@ -41,7 +41,7 @@ namespace Sprint0 {
         protected override void LoadContent(){
             spriteBatch = new SpriteBatch(GraphicsDevice);
             characterSprite = new NonMovingNonAnimatedSprite(spritePos[0], spritePos[1]);
-            characterTexture = Content.Load<Texture2D>("mario");
+            characterTexture = Content.Load<Texture2D>("Link");
             font = Content.Load<SpriteFont>("File");
             textSprite = new TextSprite(200, 100, font);
         }
