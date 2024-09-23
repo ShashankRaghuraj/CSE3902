@@ -10,6 +10,7 @@
 *.userosscache
 *.sln.docstates
 
+
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
@@ -27,8 +28,13 @@ x86/
 [Aa][Rr][Mm]/
 [Aa][Rr][Mm]64/
 bld/
+# Build results
 [Bb]in/
 [Oo]bj/
+
+# Exclude bin and obj folders globally but include them in the Content directory
+!Content/bin/
+!Content/obj/
 [Oo]ut/
 [Ll]og/
 [Ll]ogs/

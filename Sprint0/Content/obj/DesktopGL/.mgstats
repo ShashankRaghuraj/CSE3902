@@ -1,0 +1,4 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/elipa/source/repos/CSE3902/Sprint0/Content/../../../../../Downloads/Link.png","C:/Users/elipa/source/repos/CSE3902/Sprint0/Content/bin/DesktopGL/Link.xnb","TextureProcessor","Texture2DContent",19462,460125,0.1025472
+"C:/Users/elipa/source/repos/CSE3902/Sprint0/Content/File.spritefont","C:/Users/elipa/source/repos/CSE3902/Sprint0/Content/bin/DesktopGL/File.xnb","FontDescriptionProcessor","SpriteFontContent",2068,21535,0.0736293
+"C:/Users/elipa/source/repos/CSE3902/Sprint0/Content/mario.png","C:/Users/elipa/source/repos/CSE3902/Sprint0/Content/bin/DesktopGL/mario.xnb","TextureProcessor","Texture2DContent",6584,304645,0.0091342
